@@ -44,4 +44,4 @@ jobs:
             ${{ runner.os }}-cloudflare-cache-
 
       - name: Run — Sync Block & Allow to Cloudflare Gateway
-        run: python -m src leave
+        run: python -m src run
