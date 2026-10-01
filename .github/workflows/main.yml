@@ -20,7 +20,7 @@ jobs:
       ADLIST_URLS: ${{ vars.ADLIST_URLS }}
       DYNAMIC_BLACKLIST: ${{ vars.DYNAMIC_BLACKLIST }}
       # Allow sources
-      WHITELIST_URLS: ${{ vars.WHITELIST_URLS }}
+      #WHITELIST_URLS: ${{ vars.WHITELIST_URLS }}
       DYNAMIC_WHITELIST: ${{ vars.DYNAMIC_WHITELIST }}
 
     steps:
