@@ -157,13 +157,13 @@ Sau khi chỉnh xong, nhấn `CTRL + X`, rồi `Y`, rồi `ENTER` để lưu.
 4. Chạy lệnh để tải lên (cập nhật) danh sách DNS:
 
 ```sh
-python -m src run
+python -m cloudflare_gateway run
 ```
 
 5. Chạy lệnh để xoá danh sách DNS:
 
 ```sh
-python -m src leave
+python -m cloudflare_gateway leave
 ```
 
 #### Cách 2:
@@ -193,13 +193,13 @@ cd storage/downloads/Cloudflare-Gateway-DNS-Filter-main
 7. Chạy lệnh để tải lên (cập nhật) danh sách DNS:
 
 ```sh
-python -m src run
+python -m cloudflare_gateway run
 ```
 
 8. Chạy lệnh để xoá danh sách DNS:
 
 ```sh
-python -m src leave
+python -m cloudflare_gateway leave
 ```
 
 Nếu gặp lỗi trong quá trình cài đặt, tham khảo [termux-change-repo](https://wiki.termux.com/wiki/Package_Management) để đổi nguồn Termux.
@@ -216,7 +216,7 @@ Nếu gặp lỗi trong quá trình cài đặt, tham khảo [termux-change-repo
 
 ```yml
       - name: Cloudflare Gateway Zero Trust
-        run: python -m src leave
+        run: python -m cloudflare_gateway leave
 ```
 
 * Hỗ trợ **[dynamic_blacklist.txt](../lists/dynamic_blacklist.txt)** và **[dynamic_whitelist.txt](../lists/dynamic_whitelist.txt)** để tự chặn hoặc bỏ chặn tên miền theo ý thích.

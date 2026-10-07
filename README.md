@@ -164,13 +164,13 @@ After editing, press `CTRL + X`, then `Y`, and `ENTER` to save the file.
 4. Run the command to upload (update) your DNS list:
 
 ```sh
-python -m src run
+python -m cloudflare_gateway run
 ```
 
 5. Run the command to delete your DNS list:
 
 ```sh
-python -m src leave
+python -m cloudflare_gateway leave
 ```
 
 #### Method 2:
@@ -200,13 +200,13 @@ cd storage/downloads/Cloudflare-Gateway-DNS-Filter-main
 7. Run the command to upload (update) your DNS list:
 
 ```sh
-python -m src run
+python -m cloudflare_gateway run
 ```
 
 8. Run the command to delete your DNS list:
 
 ```sh
-python -m src leave
+python -m cloudflare_gateway leave
 ```
 
 If you encounter issues during setup, you can refer to [termux-change-repo](https://wiki.termux.com/wiki/Package_Management) for changing Termux repositories.
@@ -223,7 +223,7 @@ If you encounter issues during setup, you can refer to [termux-change-repo](http
 
 ```yml
       - name: Cloudflare Gateway Zero Trust
-        run: python -m src leave
+        run: python -m cloudflare_gateway leave
 ```
 
 ---
