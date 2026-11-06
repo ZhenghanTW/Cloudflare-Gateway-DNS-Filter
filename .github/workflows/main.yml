@@ -10,7 +10,7 @@ jobs:
   run:
     name: Sync Block & Allow Lists
     permissions: write-all
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     timeout-minutes: 30
 
     env:
@@ -26,18 +26,18 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@main
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
 
       - name: Install Python
-        uses: actions/setup-python@main
+        uses: actions/setup-python@v7
         with:
-          python-version: "3.11"
+          python-version: "3.13"
 
       - name: Cache Cloudflare state
         id: cache-cloudflare
-        uses: actions/cache@main
+        uses: actions/cache@v6
         with:
           path: cloudflare_cache.json
           key: ${{ runner.os }}-cloudflare-cache-${{ github.run_id }}
